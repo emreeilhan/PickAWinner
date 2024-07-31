@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		998FC7662C5AA33100442550 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 998FC7652C5AA33100442550 /* ConfettiSwiftUI */; };
+		998FC76C2C5ACC7600442550 /* SPIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = 998FC76B2C5ACC7600442550 /* SPIndicator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				998FC7662C5AA33100442550 /* ConfettiSwiftUI in Frameworks */,
+				998FC76C2C5ACC7600442550 /* SPIndicator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +69,7 @@
 			name = PickAWinner;
 			packageProductDependencies = (
 				998FC7652C5AA33100442550 /* ConfettiSwiftUI */,
+				998FC76B2C5ACC7600442550 /* SPIndicator */,
 			);
 			productName = PickAWinner;
 			productReference = 99BC34E22C5A9882006BECEC /* PickAWinner.app */;
@@ -98,6 +101,7 @@
 			mainGroup = 99BC34D92C5A9882006BECEC;
 			packageReferences = (
 				998FC7642C5AA33100442550 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				998FC76A2C5ACC7600442550 /* XCRemoteSwiftPackageReference "SPIndicator" */,
 			);
 			productRefGroup = 99BC34E32C5A9882006BECEC /* Products */;
 			projectDirPath = "";
@@ -340,6 +344,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		998FC76A2C5ACC7600442550 /* XCRemoteSwiftPackageReference "SPIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPIndicator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -347,6 +359,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 998FC7642C5AA33100442550 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
 			productName = ConfettiSwiftUI;
+		};
+		998FC76B2C5ACC7600442550 /* SPIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 998FC76A2C5ACC7600442550 /* XCRemoteSwiftPackageReference "SPIndicator" */;
+			productName = SPIndicator;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

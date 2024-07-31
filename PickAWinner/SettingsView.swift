@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(\.dismiss) private var dismiss
+    @AppStorage("showWinChance") private var showWinChance = true
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            Form {
+                Section {
+                    Toggle(isOn: $showWinChance) {
+                        HStack{
+                            Image(systemName: "percent")
+                            Text("Show Win Chance")
+                        }.bold()
+                    }
+                }
+            }
+            .toolbar{
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(role: .cancel) {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                    }
+
+                }
+            }
+            .navigationTitle("Settings")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
